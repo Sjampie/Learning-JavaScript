@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Array methodes</title>
+  </head>
+  <body>
+    <script>
+      var studenten = new Array('Zakaria','Albert','Hamsa','Mike','Pieter');
+      team = studenten;
+      team[0] = "Umut";
+      studenten.shift();
+      studenten.unshift("Jozef","Umut");
+      studenten.pop();
+      studenten.push("Pieter", "David"); //Voegt nieuwe element toe aan het einde van een array
+      document.write("<br> Opgave 30: Resultaat van push: " + studenten); //Pieter wordt dus [4] en David [5]
+    </script>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Array methodes</title>
+  </head>
+  <body>
+    <script>
+      var studenten = new Array('Zakaria','Albert','Hamsa','Mike','Pieter');
+      team = studenten;
+      team[0] = "Umut";
+      studenten.shift();
+      studenten.unshift("Jozef","Umut");
+      studenten.pop(); //Verwijdert laatste element in de array genaamd studenten (Pieter)
+      document.write("<br> Opgave 29: Resultaat van pop: " + studenten);
+    </script>
+  </body>
+</html>

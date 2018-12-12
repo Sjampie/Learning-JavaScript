@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Javascript Beslissingstructuur</title>
+  </head>
+  <body>
+    <script>
+      doorgaan = confirm('Opgave 52: Doorgaan?'); //Geef pop-up melding met een output true - false
+      if(doorgaan == true) {
+          alert('Welkom bij de if-opdracht'); //Alert melding alleen OK klikken is mogelijk
+      }
+      if(doorgaan==true) { //als de waarde van doorgaan gelijk staan aan true ga door.
+        alert('Opgave 53: Klik op OK om te beginnen');
+      }
+      else{ //anders gebruik de alert(''); methode
+        alert('Tot ziens!');
+      }
+      if(doorgaan == true) {
+        leeftijd = parseInt(prompt('Wat is je leeftijd?')); //Geef een tekst box wer
+        if(leeftijd < 17) { //als leeftijd kleiner is als 17 jaar dan ben je leerplichtig
+          leerplichtig = true;
+        }
+        else {
+          leerplichtig = false; //anders niet
+        }
+        gediplomeerd = confirm('Heb je je diploma gehaald?');
+        if(leerplichtig && !gediplomeerd) { //Ben je leerplichtig EN=&& NIET=!gediplomeerd
+          alert('Doorstuderen!');
+        }
+        if(!leerplichtig && !gediplomeerd) { //Niet leerplichtig en niet gediplomeerd
+          alert('Je bent niet leerplichtig EN niet gediplomeerd')
+        }
+        if(gediplomeerd || !leerplichtig) { //Je bent gediplomeerd of niet leerplichtig || = OR
+          alert('Je bent gediplomeerd OF niet leerplichtig OF allebei');
+        }
+      }
+
+    </script>
+  </body>
+</html>

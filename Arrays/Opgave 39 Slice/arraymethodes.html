@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Array methodes</title>
+  </head>
+  <body>
+    <script>
+      var studenten = new Array('Zakaria','Albert','Hamsa','Mike','Pieter');
+      team = studenten;
+      team[0] = "Umut";
+      studenten.shift();
+      studenten.unshift("Jozef","Umut");
+      studenten.pop();
+      studenten.push("Pieter", "David");
+      klas = studenten.splice(2,4);
+      studenten.sort();
+      studenten.reverse();
+      index = studenten.indexOf("Jozef");
+      delete klas[2];
+      klas.splice(2,1);
+      studenten.splice(index,1);
+      klas2 = klas.slice(); //Kopieert de array klas
+      document.write("<br>Opgave 39: Resultaat van kopieren: " + klas2);
+    </script>
+  </body>
+</html>

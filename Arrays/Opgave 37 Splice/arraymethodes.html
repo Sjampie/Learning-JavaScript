@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Array methodes</title>
+  </head>
+  <body>
+    <script>
+      var studenten = new Array('Zakaria','Albert','Hamsa','Mike','Pieter');
+      team = studenten;
+      team[0] = "Umut";
+      studenten.shift();
+      studenten.unshift("Jozef","Umut");
+      studenten.pop();
+      studenten.push("Pieter", "David");
+      klas = studenten.splice(2,4);
+      studenten.sort();
+      studenten.reverse();
+      index = studenten.indexOf("Jozef");
+      delete klas[2];
+      klas.splice(2,1); //Verwijderd derde element
+      document.write("<br>Opgave 37: Element volledig verwijderd: " + klas); // Het derde element is nu volledig verwijderd.
+    </script>
+  </body>
+</html>
