@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Scalda Escape Room</title>
+  </head>
+  <body>
+    <script>
+      // var maanden = new Array('januari', 'februari' , 'maart' , 'april' , 'mei' , 'juni' , 'juli' , 'augustus' , 'september' , 'oktober' , 'november', 'december');
+      // for(var i = 0; i < maanden.length; i++ );{
+      //   var eindmaand = maanden[i]
+      //   document.write(eindmaand);
+      // }
+      var myStringArray = ['Maanden','januari', 'februari' , 'maart' , 'april' , 'mei' , 'juni' , 'juli' , 'augustus' , 'september' , 'oktober' , 'november', 'december'];
+      var maanden = ['Maanden','januari', 'februari' , 'maart' , 'april' , 'mei' , 'juni' , 'juli' , 'augustus' , 'september' , 'oktober' , 'november', 'december'];
+      var arrayLength = myStringArray.length;
+      var arrayLength = myStringArray.length;
+      for (var i = 0; i < arrayLength; i++) {
+      var uitkomstMaanden = i + " " + myStringArray[i] + "<br>";
+      document.write(uitkomstMaanden);
+    }
+    december = "december";
+    var lol = function in_array(december, maanden) {
+    for(var i in maanden) {
+        if(maanden[i] == 'december') return true;
+    }
+    return false;
+}
+console.log(lol)
+
+    </script>
+  </body>
+</html>
