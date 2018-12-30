@@ -16,9 +16,9 @@ Is that a literal object have assigned properties while a contstructor use a blu
 it can make more objects using the blueprint.
 */
 
-//Adds new property
+//Adds new propertys
 person01.glasses = false;
 console.log(person01.glasses);
-//Delete property 
+//Delete property
 delete person01.glasses
 console.log(person01.glasses);
